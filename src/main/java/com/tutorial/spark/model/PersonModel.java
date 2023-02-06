@@ -1,27 +1,50 @@
 package com.tutorial.spark.model;
 
 public class PersonModel {
-    private String firstName;
-    private String lastName;
+    private String name;
+    private int age;
 
-    public PersonModel(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    private String email;
+
+    private String password;
+
+    public PersonModel(String name, int age, String email, String password) {
+        this.name = name;
+        this.age = age;
+        this.email = email;
+        this.password = password;
     }
 
-    public String getFirstName() {
-        return firstName;
+
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getLastName() {
-        return lastName;
+    public int getAge() {
+        return age;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
