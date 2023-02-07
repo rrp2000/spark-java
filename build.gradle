@@ -11,12 +11,14 @@ repositories {
 
 dependencies {
     implementation 'com.synsys.org.apache.spark:spark:1.0.0'
+//    implementation 'org.apache.spark:spark-core_2.10'
+//    implementation 'org.apache.spark:spark-streaming_2.10'
     implementation 'org.apache.spark:spark-sql_2.12:2.4.6'
-
     implementation 'org.mongodb.spark:mongo-spark-connector_2.12:3.0.0'
+//    implementation 'org.apache.spark:spark-streaming_2.12:3.2.2'
+//    implementation 'org.apache.spark:spark-core_2.10:2.2.3'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-
 }
 
 test {
